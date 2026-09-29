@@ -403,13 +403,13 @@ function createBot() {
 
   // Login
   if (message.includes('login')) {
-    bot.chat('/login Perzuu');
+    bot.chat('/login iroshani');
     console.log('[Auth] Login detected');
   }
 
   // Register
   if (message.includes('register')) {
-    bot.chat('/register Perzuu Perzuu');
+    bot.chat('/register iroshani');
     console.log('[Auth] Register detected');
   }
 
@@ -523,14 +523,14 @@ bot.on('messagestr', (msg) => {
 
   if (message.includes('/register') || message.includes('register')) {
     authDone = true;
-    bot.chat('/register Perzuu Perzuu');
+    bot.chat('/register iroshani');
     console.log('[Auth] Register sent');
     return;
   }
 
   if (message.includes('/login') || message.includes('login')) {
     authDone = true;
-    bot.chat('/login Perzuu');
+    bot.chat('/login iroshani');
     console.log('[Auth] Login sent');
     return;
   }
